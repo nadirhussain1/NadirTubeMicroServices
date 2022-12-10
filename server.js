@@ -2,7 +2,12 @@ import express from 'express';
 import fs from 'fs';
 
 const app = express();
-const port = 3000;
+
+if (!process.env.PORT) {
+    throw new Error("Please specify the port number");
+}
+
+const PORT = process.env.PORT;
 
 app.get('/video', (req, res) => {
     const path = "./videos/SampleVideo_1280x720_1mb.mp4";
@@ -23,6 +28,6 @@ app.get('/video', (req, res) => {
     })
 })
 
-app.listen(port, () => {
-    console.log("Server listening on port 3000");
+app.listen(PORT, () => {
+    console.log("Server listening on port=",PORT);
 })
