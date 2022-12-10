@@ -1,8 +1,9 @@
 {
   "name": "nadirtubemicroservices",
   "version": "1.0.0",
+  "type": "module",
   "description": "This project is about creating sample microservice for a video streaming application",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
