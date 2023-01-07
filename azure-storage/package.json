@@ -1,0 +1,30 @@
+{
+  "name": "nadirtubemicroservices",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This project is about creating sample microservice for a video streaming application",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js",
+    "start:dev": "nodemon ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadirhussain1/NadirTubeMicroServices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadirhussain1/NadirTubeMicroServices/issues"
+  },
+  "homepage": "https://github.com/nadirhussain1/NadirTubeMicroServices#readme",
+  "dependencies": {
+    "azure-storage": "^2.10.7",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
